@@ -43,7 +43,7 @@ stopWords = ["a", "an", "and", "are", "as", "at",
 #Método  cargar datos entrenamiento
 def readTrainingData():
     #Cargue archivo TXT con los IDs de los Tweets para entrenamiento
-    train_ids = pd.read_csv('./en/test-train.txt', sep=':::', engine='python', header=None)
+    train_ids = pd.read_csv('./en/truth-train.txt', sep=':::', engine='python', header=None)
     train_ids.columns = ["tweetID", "type", "gender"]
     
     #Declarar DataFrame vacio para almacenar la información de entrenamiento
